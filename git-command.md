@@ -93,6 +93,32 @@ Envoyer ses commits vers le dépôt distant
 $ git push
 ```
 
+Supprimer un fichier du répertoire de travail et de l'index
+
+```shell
+$ git rm nom_du_fichier
+```
+
+Supprimer un fichier de l'index
+
+```shell
+$ git rmg --cached nom_du_fichier
+```
+
+## Diff
+
+Affiche la différence entre le contenu du dernier commit et celui du répertoire de travail. Cela correspond à ce qui serait commité par git commit -a.
+
+```shell
+$ git diff HEAD
+```
+
+Affiche la différence entre le contenu pointé par A et celui pointé par B.
+
+```shell
+$ git diff A B
+```
+
 ## Annuler commits (soft)
 
 Seul le commit est retiré de Git ; vos fichiers, eux, restent modifiés. Vous pouvez alors à nouveau changer vos fichiers si besoin est et refaire un commit.
