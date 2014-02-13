@@ -30,15 +30,15 @@ Changer de branch
 
 Premier commit
 > $ git add .
-> $ git commit - m "initial commit"
+  $ git commit - m "initial commit"
 
 Commit suivant
 > $ git add chemin_vers_mon_fichier
-> $ git commit -m "message du commit"
+  $ git commit -m "message du commit"
 
 Annuler le dernier commit et modifs
 > $ git reset --hard md5_commit
-> $ git push --force
+  $ git push --force
 
 Mettre à jour le dépôt local
 > $ git pull
