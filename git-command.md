@@ -3,30 +3,62 @@
 ## Configuration
 
 Identity Name
-> $ git config --global user.name "aquelito"
+
+```shell
+$ git config --global user.name "aquelito"
+```
 
 Identity Email
-> $ git config --global user.email "axel@aquelito.fr"
+
+```shell
+$ git config --global user.email "axel@aquelito.fr"
+```
 
 Editor Tool
-> $ git config --global core.editor subl
+
+```shell
+$ git config --global core.editor subl
+```
 
 Diff Tool
-> $ git config --global merge.tool filemerge
+
+```shell
+$ git config --global merge.tool filemerge
+```
 
 Liste des globals
-> $ git config --list
+
+```shell
+$ git config --list
+```
 
 ## Principales commandes
 
 Status des fichiers
-> $ git status
+
+```shell
+$ git status
+```
+
+Lister les branchs
+
+```shell
+$ git branch
+```
+
+`*`sur la branche courante.
 
 Créer une branch
-> $ git branch nom_de_ma_branch
+
+```shell
+$ git branch nom_de_ma_branch
+```
 
 Changer de branch
-> $ git checkout nom_de_ma_branch
+
+```shell
+$ git checkout nom_de_ma_branch
+```
 
 Premier commit
 > $ git add .
