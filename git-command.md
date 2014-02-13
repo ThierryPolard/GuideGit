@@ -119,6 +119,28 @@ Affiche la différence entre le contenu pointé par A et celui pointé par B.
 $ git diff A B
 ```
 
+## Log
+
+```shell
+$ git log
+# Affiche X derniers commits
+$ git log -n X
+# Affiche un ensemble de commits par date
+$ git log --since=date --until=date
+```
+
+Représentation de l’historique à partir de HEAD (commit / branch)
+
+```shell
+$ git log --oneline --graph --decorate
+```
+
+Représentation de l’historique à partir d'un fichier (commit / branch)
+
+```shell
+$ git log --oneline --graph --decorate nom_du_fichier
+```
+
 ## Annuler commits (soft)
 
 Seul le commit est retiré de Git ; vos fichiers, eux, restent modifiés. Vous pouvez alors à nouveau changer vos fichiers si besoin est et refaire un commit.
