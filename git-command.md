@@ -61,29 +61,47 @@ $ git checkout nom_de_ma_branch
 ```
 
 Premier commit
-> $ git add .
-  $ git commit - m "initial commit"
+
+```shell
+$ git add .
+$ git commit - m "initial commit"
+```
 
 Commit suivant
-> $ git add chemin_vers_mon_fichier
-  $ git commit -m "message du commit"
+
+```shell
+$ git add chemin_vers_mon_fichier
+$ git commit -m "message du commit"
+```
 
 Annuler le dernier commit et modifs
-> $ git reset --hard md5_commit
-  $ git push --force
+
+```shell
+$ git reset --hard md5_commit
+$ git push --force
+```
 
 Mettre à jour le dépôt local
-> $ git pull
+
+```shell
+$ git pull
+```
 
 Envoyer ses commits vers le dépôt distant
-> $ git push
+
+```shell
+$ git push
+```
 
 ## Annuler commits (soft)
 
 Seul le commit est retiré de Git ; vos fichiers, eux, restent modifiés. Vous pouvez alors à nouveau changer vos fichiers si besoin est et refaire un commit.
 
 Annuler le dernier commit
-> $ git reset HEAD^
+
+```shell
+$ git reset HEAD^
+```
 
 Pour indiquer à quel commit on souhaite revenir, il existe plusieurs notations :
 
@@ -98,13 +116,18 @@ Pour indiquer à quel commit on souhaite revenir, il existe plusieurs notations 
 Si vous voulez annuler votre dernier commit et les changements effectués dans les fichiers, il faut faire un reset hard. *Cela annulera sans confirmation tout votre travail !*
 
 Annuler les commits et perdre tous les changements
-> $ git reset --hard HEAD^
+
+```shell
+$ git reset --hard HEAD^
+```
 
 *Annuler les modifications d’un fichier avant un commit*
 
 Si vous avez modifié plusieurs fichiers mais que vous n’avez pas encore envoyé le commit et que vous voulez restaurer un fichier tel qu’il était au dernier commit :
 
-> $ git checkout nom_du_fichier
+```shell
+$ git checkout nom_du_fichier
+```
 
 *Annuler/Supprimer un fichier avant un commit*
 
@@ -112,4 +135,6 @@ Supposer que vous venez d’ajouter un fichier à Git avec `git add` et que vous
 
 Il est possible de retirer un fichier qui avait été ajouté pour être « commité » en procédant comme suit :
 
-> $ git reset HEAD -- nom_du_fichier_a_supprimer
+```shell
+$ git reset HEAD -- nom_du_fichier_a_supprimer
+```
