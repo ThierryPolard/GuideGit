@@ -14,6 +14,19 @@ Identity Email
 $ git config --global user.email "axel@aquelito.fr"
 ```
 
+
+Après les changements de mot de passe
+```shell
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
+
+$ avec les bons id et proxy
+```
+
+
+
+
+
 Editor Tool
 
 ```shell
