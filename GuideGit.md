@@ -22,11 +22,6 @@ git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
 
 $ avec les bons id et proxy
 ```
-
-
-
-
-
 Editor Tool
 
 ```shell
@@ -45,7 +40,37 @@ Liste des globals
 $ git config --list
 ```
 
+## Initialisation
+
+créer un dossier
+```shell
+mkdir nom_du_dossier
+```
+s'y déplacer
+```shell
+cd nom_du_dossier
+```
+initialisation git
+```shell
+git init
+```
+Créer un fichier
+```shell
+touch nom_du_ficher.extension
+```
+
 ## Principales commandes
+
+Vider l'affichage de la console
+
+```shell
+cls
+```
+
+Ajouter un ficher à versionner
+```shell
+git add nom_du_ficher.ex
+```
 
 Status des fichiers
 
@@ -133,12 +158,18 @@ $ git diff A B
 ```
 
 ## Log
-
+ base
 ```shell
 $ git log
-# Affiche X derniers commits
+```
+
+Affiche X derniers commits
+```shell
 $ git log -n X
-# Affiche un ensemble de commits par date
+```
+
+Affiche un ensemble de commits par date
+```shell
 $ git log --since=date --until=date
 ```
 
