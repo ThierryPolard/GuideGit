@@ -173,7 +173,7 @@ $ git log --since=date --until=date
 
 Représentation synoptique des branches
 ```shell
-git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --all
+git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --all
 ```
 
 
