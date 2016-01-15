@@ -7,13 +7,11 @@ Identity Name
 ```shell
 $ git config --global user.name "aquelito"
 ```
-
 Identity Email
 
 ```shell
 $ git config --global user.email "axel@aquelito.fr"
 ```
-
 
 Après les changements de mot de passe
 ```shell
@@ -172,6 +170,12 @@ Affiche un ensemble de commits par date
 ```shell
 $ git log --since=date --until=date
 ```
+
+Représentation synoptique des branches
+```shell
+git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --all
+```
+
 
 Représentation de l’historique à partir de HEAD (commit / branch)
 
